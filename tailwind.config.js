@@ -93,6 +93,14 @@ module.exports = {
         maxWidth: {
           5: "20px",
         },
+
+        boxShadow: {
+          "3xl": "0 -1px 4px rgba(0,0,0, .15)",
+        },
+
+        borderRadius: {
+          large: "1.5rem 1.5rem 0 0",
+        },
       },
     },
   },
