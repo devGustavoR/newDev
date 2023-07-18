@@ -1,18 +1,15 @@
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Bai_Jamjuree as BaiJamjuree, Roboto_Flex as Roboto } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
 
-const roboto_mono = Roboto_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-roboto-mono",
-});
+const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
+
+const baiJamjuree = BaiJamjuree({
+  subsets: ['latin'],
+  weight: '700',
+  variable: '--font-bai-Jamjuree',
+})
 
 export const metadata = {
   title: "devGustavoR",
@@ -20,8 +17,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-br" className={`${inter.variable} ${roboto_mono.variable}`}>
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-br">
+      <body className={`${roboto.variable} ${baiJamjuree.variable} font-sans text-gray-100 bg-gray-900`}>{children}</body>
     </html>
   );
 }

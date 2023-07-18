@@ -82,8 +82,8 @@ module.exports = {
         },
 
         fontFamily: {
-          primary: ["--var-(font-inter)"],
-          alt: ["--var-(font-roboto-mono)"],
+          sans: "var(--font-roboto)",
+          alt: "var(--font-bai-Jamjuree)",
         },
 
         zIndex: {
@@ -100,6 +100,11 @@ module.exports = {
 
         borderRadius: {
           large: "1.5rem 1.5rem 0 0",
+        },
+
+        screens: {
+          tablet: "350px",
+          laptop: "768px",
         },
       },
     },
