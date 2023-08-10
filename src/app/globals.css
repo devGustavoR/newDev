@@ -7,3 +7,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #121215;
+  color: #fff;
+}
+
+@layer base {
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
