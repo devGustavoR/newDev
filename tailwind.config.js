@@ -84,6 +84,7 @@ module.exports = {
         fontFamily: {
           sans: "var(--font-roboto)",
           alt: "var(--font-bai-Jamjuree)",
+          mono: "var(--font-poppins)",
         },
 
         zIndex: {
