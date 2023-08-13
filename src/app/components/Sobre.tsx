@@ -1,7 +1,11 @@
 export function Sobre() {
   return (
     <div id="Sobre" className="section">
-      Sobre
+      {/*   Minha foto */}
+      <div></div>
+
+      {/* Sobre mim */}
+      <div></div>
     </div>
   );
 }
