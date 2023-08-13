@@ -28,19 +28,31 @@ export function NavBar() {
               </Link>
             </li>
             <li>
-              <a href="" className="hover:text-brown-400">
+              <Link
+                href="#Habilidades"
+                className="hover:text-brown-400"
+                scroll={true}
+              >
                 Habilidades
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="hover:text-brown-400">
+              <Link
+                href="#Qualificacoes"
+                className="hover:text-brown-400"
+                scroll={true}
+              >
                 Qualificações
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="hover:text-brown-400">
+              <Link
+                href="#Contatos"
+                className="hover:text-brown-400"
+                scroll={true}
+              >
                 Contatos
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
