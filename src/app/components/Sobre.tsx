@@ -1,15 +1,30 @@
+import Image from "next/image";
+import myPicture from "../assets/myPicture.jpg";
+
 export function Sobre() {
   return (
     <div id="Sobre" className="section">
-      {/*   Minha foto */}
-      <div></div>
+      {/*   Lado esqeurdo */}
+      <div className="px-28 py-16">
+        <div className="w-[300px] h-[350px] bg-gray-500 ml-2 absolute rounded-2xl"></div>
+        <Image
+          className="ml-2 relative top-10 left-10 rounded-2xl"
+          src={myPicture}
+          width={850}
+          height={850}
+          alt="My Picture"
+        />
+      </div>
 
-      {/* Sobre mim */}
-      <div className="flex flex-col justify-center items-center">
-        {/* Who am i HELLO */}
-        <div></div>
+      {/* Lado Direito */}
+      <div className="flex flex-col p-16">
+        {/*   */}
+        <div className="mb-5 flex flex-col ">
+          <h2 className="justify-items-end text-xl left-2">who am i</h2>
+          <h1 className="font-bold text-5xl tracking-normal font-alt">HELLO</h1>
+        </div>
         <div>
-          <p>
+          <p className="text-justify font-sans">
             Sou um Desenvolvedor Front-end com experiência em criação de
             interfaces atraentes e interativas para web. Minha paixão por
             programação começou quando descobri a habilidade de dar vida a
