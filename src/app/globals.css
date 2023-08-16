@@ -26,6 +26,16 @@ body {
   }
 }
 
+span {
+  &:nth-of-type(2) {
+    animation-delay: -2.2s; /* Start at the end of animation */
+  }
+
+  &:nth-of-type(3) {
+    animation-delay: -3.7s; /* Start mid-way of return of animation */
+  }
+}
+
 *::-webkit-scrollbar {
   width: 0.4rem;
   background-color: var(--scroll-bar-color);

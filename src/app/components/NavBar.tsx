@@ -2,24 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import logoLight from "../assets/logoLight.png";
 
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 
 export function NavBar() {
   return (
     <>
       {/* Falta só fazer a parte Mobile do NavBar */}
-      <nav className="flex justify-between gap-1 justify-center items-center">
+      <nav className="flex justify-between items-center fixed gap-[544px] z-[100] bg-gray-900">
         <a href="https://github.com/devGustavoR" target="_blank">
           <Image src={logoLight} width={80} height={80} alt="devGustavoR" />
         </a>
 
-        <div>
-          <ul className="flex justify-center gap-9 items-center left-[50%] right-[50%]">
+        <div className="flex justify-center items-center">
+          <ul className="flex justify-center gap-9 items-center">
             {/* <li>
               <Link href="#" className="hover:text-brown-400">
                 Home
@@ -64,7 +60,7 @@ export function NavBar() {
           </ul>
         </div>
 
-        <div className="flex justify-center items-center gap-4  pr-5 ">
+        <div className="flex justify-center items-center gap-4  pr-3 ">
           <Link href="https://github.com/devGustavoR">
             <AiFillGithub className="w-6 h-6 mb-3" />
           </Link>
@@ -73,10 +69,6 @@ export function NavBar() {
           </Link>
           <Link href="https://www.instagram.com/g_ribeir_/">
             <BsInstagram className="w-6 h-6 mb-3" />
-          </Link>
-
-          <Link href="#">
-            <AiFillTwitterCircle className="w-6 h-6 mb-3" />
           </Link>
         </div>
       </nav>

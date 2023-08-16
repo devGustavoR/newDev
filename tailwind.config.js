@@ -96,7 +96,7 @@ module.exports = {
         },
 
         boxShadow: {
-          "3xl": "0 -1px 4px rgba(0,0,0, .15)",
+          "3xl": "0 -1px 4px rgba(0,0,0, 0.15)",
         },
 
         borderRadius: {
@@ -107,6 +107,30 @@ module.exports = {
           tablet: "350px",
           laptop: "768px",
         },
+
+        keyframes: {
+          bounce: {
+            "0%,100%": { transform: "translateY(-25%)" },
+            "50%": { transform: "translateY(0)" },
+          },
+        },
+
+        animation: {
+          bounce: "bounce 2.2s ease infinite alternate",
+        },
+
+        //         animation: bounce 1s infinite;
+
+        // @keyframes bounce {
+        //   0%, 100% {
+        //     transform: translateY(-25%);
+        //     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        //   }
+        //   50% {
+        //     transform: translateY(0);
+        //     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        //   }
+        // }
       },
     },
   },

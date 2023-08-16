@@ -3,7 +3,9 @@ import { Habilidades } from "./components/Habilidades";
 import { Inicio } from "./components/Inicio";
 import { NavBar } from "./components/NavBar";
 import { Qualificacoes } from "./components/Qualificacoes";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { Sobre } from "./components/Sobre";
+import { Violino } from "./components/Violino";
 
 export default function Home() {
   return (
@@ -11,9 +13,11 @@ export default function Home() {
       <NavBar />
       <Inicio />
       <Sobre />
+      <Violino />
       <Habilidades />
       <Qualificacoes />
       <Contatos />
+      <ScrollToTop />
     </>
   );
 }

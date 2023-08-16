@@ -3,7 +3,7 @@ import myPicture from "../assets/myPicture.jpg";
 
 export function Sobre() {
   return (
-    <div id="Sobre" className="section">
+    <section id="Sobre" className="section">
       {/*   Lado esqeurdo */}
       <div className="px-28 py-16">
         <div className="w-[300px] h-[350px] bg-gray-500 ml-2 absolute rounded-2xl"></div>
@@ -21,8 +21,14 @@ export function Sobre() {
         {/*   */}
         <div className="mb-5 flex flex-col ">
           <h2 className="justify-items-end text-xl left-2">who am i</h2>
-          <h1 className="font-bold text-5xl tracking-normal font-alt">HELLO</h1>
+          <div>
+            <div className="w-32 h-5  bg-brown-300 absolute mt-5 rounded-md opacity-40"></div>
+            <h1 className="font-bold text-5xl tracking-normal font-alt relative">
+              HELLO
+            </h1>
+          </div>
         </div>
+
         <div>
           <p className="text-justify font-sans">
             Sou um Desenvolvedor Front-end com experiência em criação de
@@ -34,6 +40,6 @@ export function Sobre() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
