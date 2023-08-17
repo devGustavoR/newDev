@@ -24,10 +24,10 @@ export function NavBar() {
             <li>
               <Link
                 href="#Sobre"
-                className="hover:text-brown-400"
+                className="hover:text-brown-400 font-alt"
                 scroll={true}
               >
-                Sobre
+                ABOUT ME
               </Link>
             </li>
             <li>
@@ -36,7 +36,7 @@ export function NavBar() {
                 className="hover:text-brown-400"
                 scroll={true}
               >
-                Habilidades
+                SKILLS
               </Link>
             </li>
             <li>
@@ -45,7 +45,7 @@ export function NavBar() {
                 className="hover:text-brown-400"
                 scroll={true}
               >
-                Qualificações
+                QUALIFICATIONS
               </Link>
             </li>
             <li>
@@ -54,7 +54,7 @@ export function NavBar() {
                 className="hover:text-brown-400"
                 scroll={true}
               >
-                Contatos
+                CONTACT
               </Link>
             </li>
           </ul>
@@ -62,13 +62,13 @@ export function NavBar() {
 
         <div className="flex justify-center items-center gap-4  pr-3 ">
           <Link href="https://github.com/devGustavoR">
-            <AiFillGithub className="w-6 h-6 mb-3" />
+            <AiFillGithub className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-brown-400 duration-300 w-6 h-6 mb-3 " />
           </Link>
           <Link href="https://www.linkedin.com/in/devgustavor/">
-            <AiFillLinkedin className="w-6 h-6 mb-3" />
+            <AiFillLinkedin className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-brown-400 duration-300 w-6 h-6 mb-3" />
           </Link>
           <Link href="https://www.instagram.com/g_ribeir_/">
-            <BsInstagram className="w-6 h-6 mb-3" />
+            <BsInstagram className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-brown-400 duration-300 w-6 h-6 mb-3" />
           </Link>
         </div>
       </nav>

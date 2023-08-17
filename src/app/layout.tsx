@@ -16,7 +16,7 @@ const baiJamjuree = BaiJamjuree({
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "700",
+  weight: "300",
   variable: "--font-poppins",
 });
 
