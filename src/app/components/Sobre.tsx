@@ -1,13 +1,17 @@
-import Image from "next/image";
-import myPicture from "../assets/myPicture.jpg";
+import Image from 'next/image'
+import myPicture from '../assets/myPicture.jpg'
 
 export function Sobre() {
   return (
     <>
       <section id="Sobre" className="section">
         <div className="flex justify-center items-center flex-col">
-        <h1 className="text-xl font-sans absolute left-[47%] text-center ">About me</h1>
-        <h1 className="text-9xl left-2 font-sans relative text-gray-500 font-black opacity-10">About</h1>
+          <h1 className="text-xl font-sans absolute left-[47%] text-center ">
+            About me
+          </h1>
+          <h1 className="text-9xl left-2 font-sans relative text-gray-500 font-black opacity-10">
+            About
+          </h1>
         </div>
         <div className="flex justify-center items-center">
           {/*   Lado esquerdo */}
@@ -44,7 +48,7 @@ export function Sobre() {
                 aprimoramento técnico me levou a evoluir para um Desenvolvedor
                 Full-stack. Hoje, minha missão é unir a estética visual à
                 funcionalidade sólida, criando projetos completos que
-                proporcionem experiências digitais verdadeiramente memoráveis.{" "}
+                proporcionem experiências digitais verdadeiramente memoráveis.{' '}
               </p>
               <p className="text-justify font-sans tracking-wide">
                 Comecei como Desenvolvedor Front-end, onde descobri minha paixão
@@ -61,5 +65,5 @@ export function Sobre() {
         </div>
       </section>
     </>
-  );
+  )
 }
