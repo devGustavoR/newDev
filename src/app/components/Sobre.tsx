@@ -16,12 +16,12 @@ export function Sobre() {
         <div className="flex justify-center items-center">
           {/*   Lado esquerdo */}
           <div className="px-28 py-16">
-            <div className="w-[300px] h-[400px] bg-gray-500 ml-2 absolute rounded-xl"></div>
+            <div className="w-[350px] h-[450px] bg-gray-500 ml-2 absolute rounded-xl"></div>
             <Image
               className="ml-2 relative top-10 left-10 rounded-xl"
               src={myPicture}
-              width={1200}
-              height={1200}
+              width={1380}
+              height={1380}
               alt="My Picture"
             />
           </div>
