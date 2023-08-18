@@ -1,22 +1,22 @@
-import Image from "next/image";
-import myPicture from "../assets/myPicture.jpg";
+import Image from 'next/image'
+import myPicture from '../assets/myPicture.jpg'
 
 export function Sobre() {
   return (
     <>
       <section id="Sobre" className="section">
         <div className="flex justify-center items-center flex-col">
-          <h1 className="text-2xl font-sans absolute left-[47%] mt-6 text-center font-black">
+          <h1 className="text-2xl font-sans absolute left-[47%] mt-6 text-center font-black ">
             About me
           </h1>
-          <h1 className="text-9xl left-2 font-sans relative text-gray-500 font-black opacity-10">
+          <h1 className="text-9xl left-2 font-sans relative text-gray-500 font-black opacity-10 ">
             About
           </h1>
         </div>
         <div className="flex justify-center items-center">
           {/*   Lado esquerdo */}
           <div className="px-28 py-16">
-            <div className="w-[350px] h-[450px] bg-gray-500 ml-2 absolute rounded-xl"></div>
+            <div className="w-[373px] h-[480px] border-2 border-gray-500 ml-2 absolute rounded-xl"></div>
             <Image
               className="ml-2 relative top-10 left-10 rounded-xl"
               src={myPicture}
@@ -48,7 +48,7 @@ export function Sobre() {
                 aprimoramento técnico me levou a evoluir para um Desenvolvedor
                 Full-stack. Hoje, minha missão é unir a estética visual à
                 funcionalidade sólida, criando projetos completos que
-                proporcionem experiências digitais verdadeiramente memoráveis.{" "}
+                proporcionem experiências digitais verdadeiramente memoráveis.{' '}
               </p>
               <p className="text-justify font-sans tracking-wide">
                 Comecei como Desenvolvedor Front-end, onde descobri minha paixão
@@ -58,7 +58,7 @@ export function Sobre() {
                 comprometido em harmonizar a criatividade do design com a
                 solidez do desenvolvimento, criando projetos abrangentes que
                 deixam uma marca duradoura por meio de experiências digitais
-                excepcionais.{" "}
+                excepcionais.{' '}
               </p>
 
               <div className="flex justify-center items-center mt-4">
@@ -92,5 +92,5 @@ export function Sobre() {
         </div>
       </section>
     </>
-  );
+  )
 }

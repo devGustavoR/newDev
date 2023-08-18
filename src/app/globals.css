@@ -26,6 +26,11 @@ body {
   }
 }
 
+.border-gradient-brown {
+  border-image: linear-gradient(to right, brown 60%, transparent 60%);
+  border-width: 4px;
+}
+
 
 *::-webkit-scrollbar {
   width: 0.4rem;
