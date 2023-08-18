@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import react from '../assets/Skills/react.svg'
+
 export function Habilidades() {
   return (
     <div id="Habilidades" className="section">
@@ -12,6 +15,7 @@ export function Habilidades() {
       <div className="flex justify-center items-center p-16 flex-col border-2 border-brown-500 shadow-lg shadow-brown-500/50 rounded-lg">
         <h2 className="leading-relaxed font-bold uppercase	">Frontend</h2>
         <div className="mt-3 flex justify-center items-center p-2 border-2 border-brown-300 rounded-lg ">
+          <Image src={react} width={50} height={50} alt="react" />
           <p>React</p>
         </div>
       </div>
