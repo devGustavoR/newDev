@@ -1,16 +1,19 @@
-import Image from "next/image";
-import Link from "next/link";
-import logoLight from "../assets/logoLight.png";
-
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
+import Image from 'next/image'
+import Link from 'next/link'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { BsInstagram } from 'react-icons/bs'
+import logoLight from '../assets/logoLight.png'
 
 export function NavBar() {
   return (
     <>
       {/* Falta só fazer a parte Mobile do NavBar */}
-      <nav className="flex justify-between items-center fixed gap-[544px] z-[100] bg-gray-900">
-        <a href="https://github.com/devGustavoR" target="_blank">
+      <nav className="flex justify-between items-center fixed gap-[544px] z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5">
+        <a
+          href="https://github.com/devGustavoR"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image src={logoLight} width={80} height={80} alt="devGustavoR" />
         </a>
 
@@ -24,7 +27,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Sobre"
-                className="hover:text-brown-400 font-alt"
+                className="font-display hover:text-brown-400 "
                 scroll={true}
               >
                 ABOUT ME
@@ -33,7 +36,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Habilidades"
-                className="hover:text-brown-400"
+                className="font-display hover:text-brown-400"
                 scroll={true}
               >
                 SKILLS
@@ -42,7 +45,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Qualificacoes"
-                className="hover:text-brown-400"
+                className="font-display hover:text-brown-400"
                 scroll={true}
               >
                 QUALIFICATIONS
@@ -51,7 +54,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Contatos"
-                className="hover:text-brown-400"
+                className="font-display hover:text-brown-400"
                 scroll={true}
               >
                 CONTACT
@@ -73,5 +76,5 @@ export function NavBar() {
         </div>
       </nav>
     </>
-  );
+  )
 }
