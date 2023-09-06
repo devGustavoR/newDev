@@ -1,18 +1,22 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { BsInstagram } from 'react-icons/bs'
 import logoLight from '../assets/logoLight.png'
 
 export function NavBar() {
+  const [open, setOpen] = useState(false)
   return (
     <>
       {/* Falta só fazer a parte Mobile do NavBar */}
-      <nav className="flex justify-between items-center fixed gap-[544px] z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5">
+      <nav className="flex justify-between items-center fixed gap-[544px] z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5  ">
         <a
           href="https://github.com/devGustavoR"
           target="_blank"
           rel="noreferrer"
+          className=""
         >
           <Image src={logoLight} width={80} height={80} alt="devGustavoR" />
         </a>
