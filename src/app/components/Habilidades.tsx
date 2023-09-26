@@ -6,20 +6,12 @@ import {
   FaPhp,
   FaReact,
 } from 'react-icons/fa'
-import {
-  SiAdobexd,
-  SiCoursera,
-  SiCplusplus,
-  SiCsharp,
-  SiFirebase,
-  SiJavascript,
-  SiMysql,
-} from 'react-icons/si'
+import { SiAdobexd, SiFirebase, SiJavascript, SiMysql } from 'react-icons/si'
 
 export function Habilidades() {
   return (
     <div id="Habilidades" className="section">
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col mb-4">
         <h1 className="text-2xl font-sans absolute left-[47%] mt-6 text-center font-black">
           Skills
         </h1>
@@ -27,7 +19,7 @@ export function Habilidades() {
           Skills
         </h1>
       </div>
-      <div className="grid justify-center items-center p-5 grid-cols-2 gap-4">
+      <div className="grid justify-center items-center p-5 grid-cols-2 gap-4 mt-3">
         {/* Frontend */}
         <div className="flex justify-center items-center p-16 flex-col border-2 border-brown-500 shadow-lg shadow-brown-300/50 rounded-lg ">
           <h2 className="leading-relaxed font-bold uppercase	">
@@ -102,25 +94,6 @@ export function Habilidades() {
             <div className="mt-3 flex justify-center items-center p-2 border-2 border-brown-300 rounded-lg hover:shadow-md hover:shadow-blue-500 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110">
               <FaReact className="w-9 h-9 text-blue-500 mr-3 font-alt" />
               <p>React Native</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Others */}
-        <div className="flex justify-center items-center p-16 flex-col border-2 border-brown-500 shadow-lg shadow-brown-500/50 rounded-lg ml-3">
-          <h2 className="leading-relaxed font-bold uppercase">Others</h2>
-          <div className="grid grid-cols-3 gap-4 justify-center items-center">
-            <div className="mt-3 flex justify-center items-center p-2 border-2 border-brown-300 rounded-lg hover:shadow-md hover:shadow-blue-200 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110">
-              <SiCoursera className="w-9 h-9 text-blue-200 mr-3 font-alt" />
-              <p>C</p>
-            </div>
-            <div className="mt-3 flex justify-center items-center p-2 border-2 border-brown-300 rounded-lg hover:shadow-md hover:shadow-red-100 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110">
-              <SiCplusplus className="w-9 h-9 text-red-100 mr-3 font-alt" />
-              <p>C++</p>
-            </div>
-            <div className="mt-3 flex justify-center items-center p-2 border-2 border-brown-300 rounded-lg hover:shadow-md hover:shadow-purple-1100 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110">
-              <SiCsharp className="w-9 h-9 text-purple-1100 mr-3 font-alt" />
-              <p>C#</p>
             </div>
           </div>
         </div>

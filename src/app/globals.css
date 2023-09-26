@@ -22,7 +22,7 @@ body {
 
 @layer base {
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center justify-center flex-col;
+    @apply py-9 lg:py-24 lg:h-screen flex items-center justify-center flex-col;
   }
 }
 
