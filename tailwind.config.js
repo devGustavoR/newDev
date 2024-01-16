@@ -133,6 +133,10 @@ module.exports = {
           bounce: 'bounce 2.2s ease infinite alternate',
         },
 
+        gap: {
+          100: '35rem',
+        },
+
         //         animation: bounce 1s infinite;
 
         // @keyframes bounce {

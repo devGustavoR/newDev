@@ -11,7 +11,7 @@ export function NavBar() {
   return (
     <>
       {/* Falta só fazer a parte Mobile do NavBar */}
-      <nav className="flex justify-between items-center fixed gap-[544px] z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5  ">
+      <nav className="flex justify-between items-center fixed gap-[36rem] z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5 xl:gap-[30rem] md:gap-[25rem]">
         <a
           href="https://github.com/devGustavoR"
           target="_blank"
@@ -23,15 +23,10 @@ export function NavBar() {
 
         <div className="flex justify-center items-center">
           <ul className="flex justify-center gap-9 items-center">
-            {/* <li>
-              <Link href="#" className="hover:text-brown-400">
-                Home
-              </Link>
-            </li> */}
             <li>
               <Link
                 href="#Sobre"
-                className="font-display hover:text-brown-400 "
+                className="font-display hover:text-brown-400 flex justify-center items-center"
                 scroll={true}
               >
                 ABOUT ME
