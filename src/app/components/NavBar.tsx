@@ -30,7 +30,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Sobre"
-                className="font-display hover:text-brown-400 flex justify-center items-center"
+                className="font-display hover:text-blue-800 flex justify-center items-center"
                 scroll={true}
               >
                 Sobre
@@ -39,7 +39,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Habilidades"
-                className="font-display hover:text-brown-400"
+                className="font-display hover:text-blue-800"
                 scroll={true}
               >
                 Habilidades
@@ -48,7 +48,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Qualificacoes"
-                className="font-display hover:text-brown-400"
+                className="font-display hover:text-blue-800"
                 scroll={true}
               >
                 Qualificações
@@ -57,7 +57,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Contatos"
-                className="font-display hover:text-brown-400"
+                className="font-display hover:text-blue-800"
                 scroll={true}
               >
                 Contatos
@@ -68,13 +68,13 @@ export function NavBar() {
 
         <div className="flex justify-center items-center gap-4  pr-3 max-lg:hidden">
           <Link href="https://github.com/devGustavoR">
-            <AiFillGithub className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-brown-400 duration-300 w-6 h-6 mb-3 " />
+            <AiFillGithub className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-800 duration-300 w-6 h-6 mb-3 " />
           </Link>
           <Link href="https://www.linkedin.com/in/devgustavor/">
-            <AiFillLinkedin className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-brown-400 duration-300 w-6 h-6 mb-3" />
+            <AiFillLinkedin className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-800 duration-300 w-6 h-6 mb-3" />
           </Link>
           <Link href="https://www.instagram.com/g_ribeir_/">
-            <BsInstagram className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-brown-400 duration-300 w-6 h-6 mb-3" />
+            <BsInstagram className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-800 duration-300 w-6 h-6 mb-3" />
           </Link>
         </div>
 
@@ -111,7 +111,7 @@ export function NavBar() {
               <li>
                 <Link
                   href="#Sobre"
-                  className="font-display hover:text-brown-400 text-gray-600 text-xl"
+                  className="font-display hover:text-blue-800 text-gray-600 text-xl"
                   scroll={true}
                   onClick={handleNav}
                 >
@@ -122,7 +122,7 @@ export function NavBar() {
               <li>
                 <Link
                   href="#Habilidades"
-                  className="font-display hover:text-brown-400 text-gray-600 text-xl"
+                  className="font-display hover:text-blue-800 text-gray-600 text-xl"
                   scroll={true}
                   onClick={handleNav}
                 >
@@ -133,7 +133,7 @@ export function NavBar() {
               <li>
                 <Link
                   href="#Qualificacoes"
-                  className="font-display hover:text-brown-400 text-gray-600 text-xl"
+                  className="font-display hover:text-blue-800 text-gray-600 text-xl"
                   scroll={true}
                   onClick={handleNav}
                 >
@@ -144,7 +144,7 @@ export function NavBar() {
               <li>
                 <Link
                   href="#Contatos"
-                  className="font-display hover:text-brown-400 text-gray-600 text-xl"
+                  className="font-display hover:text-blue-800 text-gray-600 text-xl"
                   scroll={true}
                   onClick={handleNav}
                 >
