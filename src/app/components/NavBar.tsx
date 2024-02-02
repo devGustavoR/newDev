@@ -95,14 +95,16 @@ export function NavBar() {
         <div
           className={
             menuOpen
-              ? 'fixed left-0 top-0 w-[100%] hidden h-screen bg-gray-50 p-10 ease-in duration-500 max-lg:flex max-lg:flex-col'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+              ? 'fixed right-0 top-0 w-[100%] hidden h-screen bg-gray-50 p-10 ease-in duration-500 max-lg:flex max-lg:flex-col'
+              : 'fixed right-[-100%] top-0 p-10 ease-in duration-500'
           }
-          onClick={handleNav}
         >
-          <div className="max-lg:flex max-lg:flex-col left-[100%]">
-            <i className="bg-gray-600 w-8 h-[2px] rounded rotate-45 max-lg:cursor-pointer"></i>
-            <i className="bg-gray-600 w-8 h-[2px] rounded -rotate-45 -translate-y-1 max-lg:cursor-pointer"></i>
+          <div
+            className="max-lg:flex max-lg:flex-col max-lg:ml-[100%]"
+            onClick={handleNav}
+          >
+            <i className="bg-gray-600 w-8 h-1 rounded rotate-45 max-lg:cursor-pointer"></i>
+            <i className="bg-gray-600 w-8 h-1 rounded -rotate-45 -translate-y-1 max-lg:cursor-pointer"></i>
           </div>
           <div className="flex justify-center items-center mt-[25%]">
             <ul className="flex justify-center gap-9 items-center flex-col">
@@ -111,6 +113,7 @@ export function NavBar() {
                   href="#Sobre"
                   className="font-display hover:text-brown-400 text-gray-600 text-xl"
                   scroll={true}
+                  onClick={handleNav}
                 >
                   Sobre
                 </Link>
@@ -121,6 +124,7 @@ export function NavBar() {
                   href="#Habilidades"
                   className="font-display hover:text-brown-400 text-gray-600 text-xl"
                   scroll={true}
+                  onClick={handleNav}
                 >
                   Habilidades
                 </Link>
@@ -131,6 +135,7 @@ export function NavBar() {
                   href="#Qualificacoes"
                   className="font-display hover:text-brown-400 text-gray-600 text-xl"
                   scroll={true}
+                  onClick={handleNav}
                 >
                   Qualificações
                 </Link>
@@ -141,6 +146,7 @@ export function NavBar() {
                   href="#Contatos"
                   className="font-display hover:text-brown-400 text-gray-600 text-xl"
                   scroll={true}
+                  onClick={handleNav}
                 >
                   Contatos
                 </Link>
