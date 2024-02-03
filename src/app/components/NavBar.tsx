@@ -1,9 +1,11 @@
 'use client'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { BsInstagram } from 'react-icons/bs'
+import { slideInFromLeft } from '../../../utils/motion'
 import logoLight from '../assets/logoLight.png'
 
 export function NavBar() {
@@ -15,15 +17,21 @@ export function NavBar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center fixed z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5  w-[100%]">
-        <a
+      <motion.nav
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="flex justify-between items-center fixed z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5  w-[100%]"
+      >
+        <motion.a
+          variants={slideInFromLeft(7)}
           href="https://github.com/devGustavoR"
           target="_blank"
           rel="noreferrer"
           className=""
         >
           <Image src={logoLight} width={80} height={80} alt="devGustavoR" />
-        </a>
+        </motion.a>
 
         <div className="flex justify-center items-center max-lg:hidden">
           <ul className="flex justify-center gap-9 items-center">
@@ -154,7 +162,7 @@ export function NavBar() {
             </ul>
           </div>
         </div>
-      </nav>
+      </motion.nav>
     </>
   )
 }
