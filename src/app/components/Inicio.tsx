@@ -14,6 +14,15 @@ export function Inicio() {
       >
         {/* Adicione o seu memoji aqui */}
         {/* Elabore o fundo do seu site */}
+
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, repeatType: 'loop' }}
+          className="absolute bg-gray-500 rounded-full right-[22.5rem] p-7 bottom-[13.5rem]"
+        >
+          <p className="text-2xl">🔥</p>
+        </motion.div>
+        {/* Profile */}
         <div className="flex justify-center items-center flex-col font-sans font-semibold">
           <h2 className="mr-2 text-4xl font-extrabold">Hello, I'm </h2>
           <TypeAnimation
@@ -36,6 +45,7 @@ export function Inicio() {
           />
         </div>
 
+        {/* Scroll Animation */}
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
           <a href="#sobre">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-gray-600 flex justify-center items-start p-2">
