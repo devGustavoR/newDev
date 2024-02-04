@@ -1,6 +1,8 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
+import eu from '../assets/eu.png'
 
 export function Inicio() {
   return (
@@ -13,6 +15,9 @@ export function Inicio() {
         className="section flex justify-center items-center flex-col"
       >
         {/* Adicione o seu memoji aqui */}
+        <div className="bg-gray-500 rounded-full p-5 flex justify-center itens-center mb-3">
+          <Image src={eu} width={150} height={150} />
+        </div>
         {/* Elabore o fundo do seu site */}
 
         <motion.div
@@ -46,7 +51,7 @@ export function Inicio() {
         </div>
 
         {/* Scroll Animation */}
-        <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <div className="absolute xs:bottom-10 -bottom-32 w-full flex justify-center items-center">
           <a href="#sobre">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-gray-600 flex justify-center items-start p-2">
               <motion.div
