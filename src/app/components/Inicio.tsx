@@ -16,12 +16,12 @@ export function Inicio() {
       >
         {/* Adicione o seu memoji aqui */}
         <div className="bg-gray-500 rounded-full p-5 flex justify-center itens-center mb-3">
-          <Image src={eu} width={150} height={150} atl="Meu memoji" />
+          <Image src={eu} width={150} height={150} atl="Meu memoji - eu" />
         </div>
         {/* Elabore o fundo do seu site */}
 
         <motion.div
-          animate={{ rotate: 360 }}
+          animate={{ rotate: 45 }}
           transition={{ repeat: Infinity, repeatType: 'loop' }}
           className="absolute bg-gray-500 rounded-full right-[22.5rem] p-7 bottom-[13.5rem]"
         >
