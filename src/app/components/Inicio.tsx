@@ -15,14 +15,15 @@ export function Inicio() {
         className="section flex justify-center items-center flex-col"
       >
         {/* Adicione o seu memoji aqui */}
-        <div className="bg-gray-500 rounded-full p-5 flex justify-center itens-center mb-3">
-          <Image src={eu} width={150} height={150} atl="Meu memoji - eu" />
+        <div className="rounded-full p-5 flex justify-center itens-center mb-3">
+          <Image src={eu} width={250} height={250} atl="Meu memoji - eu" />
         </div>
         {/* Elabore o fundo do seu site */}
 
         <motion.div
-          animate={{ rotate: 45 }}
-          transition={{ repeat: Infinity, repeatType: 'loop' }}
+          initial={{ rotate: '0deg' } as any}
+          animate={{ rotate: '5deg' } as any}
+          transition={{ repeat: Infinity, duration: 3 }}
           className="absolute bg-gray-500 rounded-full right-[22.5rem] p-7 bottom-[13.5rem]"
         >
           <p className="text-2xl">🔥</p>
