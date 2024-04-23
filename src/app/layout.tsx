@@ -3,6 +3,7 @@ import {
   League_Spartan as League,
   Poppins,
   Roboto_Flex as Roboto,
+  Supermercado_One as Supermercado,
 } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
@@ -27,6 +28,12 @@ const poppins = Poppins({
   variable: '--font-poppins',
 })
 
+const supermercado = Supermercado({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-supermercado',
+})
+
 export const metadata = {
   title: 'devGustavoR',
 }
@@ -35,7 +42,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} ${poppins.variable} ${league.variable} font-mono text-orange-150 bg-gray-900`}
+        className={`${roboto.variable} ${baiJamjuree.variable} ${poppins.variable} ${league.variable} ${supermercado.variable} font-mono text-orange-150 bg-gray-900`}
       >
         {children}
       </body>

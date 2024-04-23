@@ -103,6 +103,7 @@ module.exports = {
           alt: 'var(--font-bai-Jamjuree)',
           mono: 'var(--font-poppins)',
           display: 'var(--font-league-spartan)',
+          super: 'var(--font-supermercado}',
         },
 
         zIndex: {
