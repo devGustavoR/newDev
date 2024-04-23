@@ -15,6 +15,7 @@ export function Inicio2() {
         className="section flex justify-center items-center flex-col"
       >
         {/* Adicione o seu memoji aqui */}
+<<<<<<< HEAD:src/app/components/Inicio2.tsx
         <div className=" flex justify-center itens-center mb-4">
           <Image
             className="shadow-2xl shadow-cyan-500/50"
@@ -22,12 +23,17 @@ export function Inicio2() {
             width={155}
             height={155}
           />
+=======
+        <div className="rounded-full p-5 flex justify-center itens-center mb-3">
+          <Image src={eu} width={250} height={250} atl="Meu memoji - eu" />
+>>>>>>> c95bd6420c3683f3a951db514b3e0e812504c5d4:src/app/components/Inicio.tsx
         </div>
         {/* Elabore o fundo do seu site */}
 
         <motion.div
-          animate={{ rotate: 45 }}
-          transition={{ repeat: Infinity, repeatType: 'loop' }}
+          initial={{ rotate: '0deg' } as any}
+          animate={{ rotate: '5deg' } as any}
+          transition={{ repeat: Infinity, duration: 3 }}
           className="absolute bg-gray-500 rounded-full right-[22.5rem] p-7 bottom-[13.5rem]"
         >
           <p className="text-2xl">🔥</p>
