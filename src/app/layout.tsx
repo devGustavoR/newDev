@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable} ${poppins.variable} ${league.variable} font-mono text-gray-100 bg-gray-900`}
+        className={`${roboto.variable} ${baiJamjuree.variable} ${poppins.variable} ${league.variable} font-mono text-orange-150 bg-gray-900`}
       >
         {children}
       </body>

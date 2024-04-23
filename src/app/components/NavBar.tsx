@@ -3,8 +3,6 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { BsInstagram } from 'react-icons/bs'
 import { slideInFromLeft } from '../../../utils/motion'
 import logoLight from '../assets/logoLight.png'
 
@@ -21,7 +19,7 @@ export function NavBar() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.1 }}
-        className="flex justify-between items-center fixed z-[100] bg-gray-900 font-alt shadow-md shadow-brown-50/5  w-[100%]"
+        className="flex justify-between items-center fixed z-[100] bg-gray-900 font-alt  w-[100%]"
       >
         <motion.a
           variants={slideInFromLeft(7)}
@@ -30,15 +28,15 @@ export function NavBar() {
           rel="noreferrer"
           className=""
         >
-          <Image src={logoLight} width={80} height={80} alt="devGustavoR" />
+          <Image src={logoLight} width={100} height={100} alt="devGustavoR" />
         </motion.a>
 
         <div className="flex justify-center items-center max-lg:hidden">
-          <ul className="flex justify-center gap-9 items-center">
+          <ul className="flex justify-center gap-9 items-center mr-4">
             <li>
               <Link
                 href="#Sobre"
-                className="font-display hover:text-blue-800 flex justify-center items-center"
+                className="font-display hover:text-brown-250 flex justify-center items-center"
                 scroll={true}
               >
                 Sobre
@@ -47,7 +45,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Habilidades"
-                className="font-display hover:text-blue-800"
+                className="font-display hover:text-brown-250"
                 scroll={true}
               >
                 Habilidades
@@ -56,7 +54,7 @@ export function NavBar() {
             <li>
               <Link
                 href="#Qualificacoes"
-                className="font-display hover:text-blue-800"
+                className="font-display hover:text-brown-250"
                 scroll={true}
               >
                 Qualificações
@@ -65,25 +63,13 @@ export function NavBar() {
             <li>
               <Link
                 href="#Contatos"
-                className="font-display hover:text-blue-800"
+                className="font-display hover:text-brown-250"
                 scroll={true}
               >
                 Contatos
               </Link>
             </li>
           </ul>
-        </div>
-
-        <div className="flex justify-center items-center gap-4  pr-3 max-lg:hidden">
-          <Link href="https://github.com/devGustavoR">
-            <AiFillGithub className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-800 duration-300 w-6 h-6 mb-3 " />
-          </Link>
-          <Link href="https://www.linkedin.com/in/devgustavor/">
-            <AiFillLinkedin className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-800 duration-300 w-6 h-6 mb-3" />
-          </Link>
-          <Link href="https://www.instagram.com/g_ribeir_/">
-            <BsInstagram className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-blue-800 duration-300 w-6 h-6 mb-3" />
-          </Link>
         </div>
 
         {/* Menu */}
@@ -114,6 +100,7 @@ export function NavBar() {
             <i className="bg-gray-600 w-8 h-1 rounded rotate-45 max-lg:cursor-pointer"></i>
             <i className="bg-gray-600 w-8 h-1 rounded -rotate-45 -translate-y-1 max-lg:cursor-pointer"></i>
           </div>
+          {/*  */}
           <div className="flex justify-center items-center mt-[25%]">
             <ul className="flex justify-center gap-9 items-center flex-col">
               <li>
