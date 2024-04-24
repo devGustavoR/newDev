@@ -5,18 +5,18 @@ import { FaTwitter } from 'react-icons/fa'
 
 export function RedesSociais() {
   return (
-    <div className="flex justify-center items-center flex-col fixed top-[85%] ml-7 max-lg:hidden">
+    <div className="fixed top-[85%] ml-7 flex flex-col items-center justify-center max-lg:hidden">
       <Link href="https://github.com/devGustavoR">
-        <AiFillGithub className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-brown-250 duration-300 w-6 h-6 mb-3 " />
+        <AiFillGithub className="mb-3 h-6 w-6 transition delay-75 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-brown-250 " />
       </Link>
       <Link href="https://www.linkedin.com/in/devgustavor/">
-        <AiFillLinkedin className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-brown-250 duration-300 w-6 h-6 mb-3" />
+        <AiFillLinkedin className="mb-3 h-6 w-6 transition delay-75 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-brown-250" />
       </Link>
       <Link href="https://www.instagram.com/g_ribeir_/">
-        <BsInstagram className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-brown-250 duration-300 w-6 h-6 mb-3" />
+        <BsInstagram className="mb-3 h-6 w-6 transition delay-75 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-brown-250" />
       </Link>
       <Link href="https://www.instagram.com/g_ribeir_/">
-        <FaTwitter className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-brown-250 duration-300 w-6 h-6 mb-3" />
+        <FaTwitter className="mb-3 h-6 w-6 transition delay-75 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-brown-250" />
       </Link>
     </div>
   )

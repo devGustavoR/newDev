@@ -1,3 +1,4 @@
+import { Habilidades } from '@/pages/Habilidades/Habilidades'
 import { Inicio } from '@/pages/Inicio/Inicio'
 import { Sobre } from '@/pages/Sobre/Sobre'
 import { MarcaDev } from './components/MarcaDev'
@@ -12,7 +13,7 @@ export default function Home() {
       <MarcaDev />
       <Inicio />
       <Sobre />
-      {/* <Habilidades /> */}
+      <Habilidades />
       {/* <Violino /> */}
       {/* 
       
