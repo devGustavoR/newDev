@@ -7,6 +7,7 @@ import {
 } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
+import { Providers } from './providers'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 
@@ -44,7 +45,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} ${poppins.variable} ${league.variable} ${supermercado.variable} bg-gray-900 font-mono text-orange-150`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

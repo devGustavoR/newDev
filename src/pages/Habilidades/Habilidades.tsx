@@ -1,3 +1,5 @@
+'use client'
+import { CircularProgress } from '@nextui-org/react'
 
 export function Habilidades() {
   return (
@@ -10,6 +12,27 @@ export function Habilidades() {
           Skills
         </h1>
       </div>
+
+      <div className="items-center justify-center pb-0">
+        <CircularProgress
+          classNames={{
+            svg: 'w-16 h-16 drop-shadow-md',
+            indicator: 'stroke-brown-250',
+            track: 'stroke-white/5',
+            value: 'text-xl font-normal text-brown-250',
+          }}
+          value={85}
+          strokeWidth={2}
+          showValueLabel={false}
+        />
+      </div>
+      {/* <Circle
+        percent={85}
+        strokeWidth={7}
+        strokeColor="#B76E2D"
+        className="h-16 w-16"
+      />
+      <FaHtml5 className="absolute mb-6 h-8 w-8" /> */}
     </div>
   )
 }
